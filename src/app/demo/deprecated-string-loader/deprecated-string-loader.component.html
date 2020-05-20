@@ -1,0 +1,17 @@
+<mat-sidenav-container class="sidenav-container">
+
+  <mat-sidenav mode="side" opened>
+
+    <mat-card>
+      <div *ngFor="let widget of widgets">
+        <button mat-button (click)="addWidget(widget)">{{ widget.name }}</button>
+      </div>
+    </mat-card>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <div #vc id="content"></div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

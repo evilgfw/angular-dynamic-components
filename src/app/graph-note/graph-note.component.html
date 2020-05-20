@@ -1,0 +1,16 @@
+<mat-card class="card-row">
+  <mat-card>
+    <mat-form-field class="text-field" *ngFor="let item of data">
+      <input matInput type="number"
+             [value]="item.value"
+             (input)="update(item, $event.target.value)">
+    </mat-form-field>
+  </mat-card>
+
+  <mat-card class="quote-card">
+    <app-note-paper>
+      <app-bar-graph-note [data]="data">
+      </app-bar-graph-note>
+    </app-note-paper>
+  </mat-card>
+</mat-card>
