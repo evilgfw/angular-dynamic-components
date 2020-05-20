@@ -1,5 +1,5 @@
 # angular-dynamic-components
-angular 9 dynamic components.
+demo for angular 9 dynamic and lazyload components.
 
 forked and changed from NgTalksDemo:
 https://github.com/shmool/dynamic-components
